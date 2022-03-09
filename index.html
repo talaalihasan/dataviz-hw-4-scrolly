@@ -141,45 +141,7 @@
             <!--  sticky graphic   -->
             <figure class='sticky'>
                 <!-- put your chart stuff here -->
-                <div class='bar-outer'>
-                    <div class='bar-inner'></div>
-                </div>
-            </figure>
-
-            <!--  step text   -->
-            <article>
-                <div class='step' data-width='10%' data-index='0'>
-                    <p>Bar is 10%</p>
-                </div>
-                <div class='step' data-width='90%' data-index='1'>
-                    <p>Bar is 90%</p>
-                </div>
-                <div class='step' data-width='50%' data-index='2'>
-                    <p>Bar is 50%</p>
-                </div>
-            </article>
-
-        </div>
-
-    </section>
-
-    <section class='filler'>
-        <h2>End. Keep scrolling!</h2>
- 
-        <div class="spacer"></div>
-        <p>See? The article continued as normal.</p>
-        <p>
-            So basically the "sticky" positioned element is the figure. Article is relatively position element. When you scroll the through the article element, then the figure "element" unsticks.
-        </p>
-        <p>
-            This is all handled by CSS. The only Javascript is in checking which of the slides are in the viewport and then triggering a function when it is in view.
-        </p>
-        </br>
-        </br>
-    </section>
-</body>
-
-<!-- add your script blocks at the end -->
+                <!-- add your script blocks at the end -->
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script src="https://unpkg.com/enter-view@1.0.0/enter-view.min.js"></script>
 <!-- https://github.com/russellgoldenberg/enter-view -->
@@ -465,6 +427,45 @@ let legend_colors = [
     })
 
 </script>
+                <div class='bar-outer'>
+                    <div class='bar-inner'></div>
+                </div>
+            </figure>
+
+            <!--  step text   -->
+            <article>
+                <div class='step' data-width='10%' data-index='0'>
+                    <p>Bar is 10%</p>
+                </div>
+                <div class='step' data-width='90%' data-index='1'>
+                    <p>Bar is 90%</p>
+                </div>
+                <div class='step' data-width='50%' data-index='2'>
+                    <p>Bar is 50%</p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class='filler'>
+        <h2>End. Keep scrolling!</h2>
+ 
+        <div class="spacer"></div>
+        <p>See? The article continued as normal.</p>
+        <p>
+            So basically the "sticky" positioned element is the figure. Article is relatively position element. When you scroll the through the article element, then the figure "element" unsticks.
+        </p>
+        <p>
+            This is all handled by CSS. The only Javascript is in checking which of the slides are in the viewport and then triggering a function when it is in view.
+        </p>
+        </br>
+        </br>
+    </section>
+</body>
+
+
 <script>
     const container = d3.select('#scrolly-overlay');
     const stepSel = container.selectAll('.step'); //final all the step nodes
